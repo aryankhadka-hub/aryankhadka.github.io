@@ -1,0 +1,500 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(Black-Mountain-Night-High-Definition-Wallpaper-117671.jpg);
+    background-size: cover;
+    line-height: 1.6;
+    font-family:'Times New Roman', Times, serif;
+}
+
+nav {
+    background-color: transparent;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    position: absolute;
+    left: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo:hover {
+    background-color: #FB460D;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.logo:hover {
+    background-color: #FB460D;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.menu{
+    display: inline-block;
+    color: #ecf0f1;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 0 18px;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-10px);
+    background-color: #141314;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 150px;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.dropdown li {
+    margin: 0;
+}
+
+.dropdown a {
+    color: #ecf0f1;
+    text-decoration: none;
+    display: block;
+    padding: 10px 18px;
+    font-size: 13px;
+    font-family: 'Arial', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.dropdown a:hover {
+    color: #ecf0f1;
+    background-color: #FB460D;
+    border-radius: 4px;
+}
+
+.menu:hover .dropdown,
+.dropdown:hover {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+.work-together {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    right: 0;
+    margin-right: 60px;
+    margin-top: 10px;
+        transition: all 0.3s ease;
+}
+
+.work-together:hover {
+    color: #ecf0f1;
+    background-color: #FB460D;
+    padding: 20px 10px;
+    border-radius: 4px;
+}
+
+.animate-text span {
+    opacity: 0;
+    display: inline-block;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.animate-text span:nth-child(1) { animation-delay: 0.2s; }
+.animate-text span:nth-child(2) { animation-delay: 0.5s; }
+.animate-text span:nth-child(3) { animation-delay: 0.8s; }
+.animate-text span:nth-child(4) { animation-delay: 1.2s; }
+.animate-text span:nth-child(5) { animation-delay: 1.5s; }
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.intro {
+    height: 100vh;
+    background-image: url('Black-Mountain-Night-High-Definition-Wallpaper-117671.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding-left: 60px;
+}
+.intro h1 {
+    color: #ecf0f1;
+    font-size: 100px;
+    line-height: 1;
+    font-family: 'times new roman', serif;
+
+}
+
+.name-highlight {
+    color: #FB460D;
+    font-weight: bolder;
+    font-family: var(--font-mono)
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #FB460D;
+    color: #ecf0f1;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+.process {
+    display: flex;
+    height: 60vh;
+    padding: 80px;
+    background: #ffffff;
+
+}
+
+.process-left h1 {
+    font-size: 60px;
+    margin-bottom: 40px;
+}
+
+.step.active {
+    opacity: 1;
+}
+
+
+.step h2 {
+    display: inline;
+    font-size: 28px;
+}
+
+.step p {
+    margin-top: 10px;
+    color: rgb(54, 54, 54);
+    max-width: 400px;
+}
+
+
+.hobbies-page {
+    background: #141314;
+    color: #ecf0f1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hobbies-nav {
+    background: rgba(20, 20, 20, 0.95);
+    color: #ffffff;
+    padding: 14px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hobbies-nav .logo {
+    color: #ffffff;
+    position: static;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 22px;
+    margin: 0;
+}
+
+.hobbies-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 24px;
+    font-size: 15px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    transition: all 0.25s ease;
+}
+
+.hobbies-links a:hover,
+.hobbies-links a.active {
+    background: #FB460D;
+    color: #111b3d;
+}
+
+.hobbies-main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 24px;
+}
+
+.hobbies-header h1 {
+    font-size: 42px;
+    letter-spacing: 1px;
+    margin-bottom: 14px;
+}
+
+.hobbies-header p {
+    font-size: 18px;
+    max-width: 760px;
+    margin-bottom: 40px;
+    color: #ffffffd8;
+}
+
+.hobby-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 22px;
+}
+
+.hobby-card {
+    background: #fff;
+    border: 1px solid #dde7f6;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 12px 25px rgba(10, 30, 77, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.hobby-card:nth-child(1) { animation-delay: 0.2s; }
+.hobby-card:nth-child(2) { animation-delay: 0.4s; }
+.hobby-card:nth-child(3) { animation-delay: 0.6s; }
+.hobby-card:nth-child(4) { animation-delay: 0.8s; }
+
+
+
+.hobby-card i {
+    color: #1f2a42;
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.hobby-card h2 {
+    margin: 8px 0 12px;
+    color: #0f1d42;
+}
+
+.hobby-card p {
+    color: #30415f;
+    line-height: 1.55;
+}
+
+.hobby-quote {
+    margin-top: 46px;
+    text-align: center;
+}
+
+.hobby-quote blockquote {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ffffff;
+    font-style: italic;
+    margin: 0 auto;
+    max-width: 700px;
+    border-left: 4px solid #FB460D;
+    padding-left: 18px;
+}
+
+.hobbies-footer {
+    background:  #FB460D  ;
+    color: #f3f8ff;
+    text-align: center;
+    padding: 16px 10px;
+    font-size: 14px;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.skills-page {
+    background: #141314;
+    color: #ecf0f1;
+}
+
+.skills-nav {
+    background: rgba(20, 20, 20, 0.95);
+    padding: 14px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills-nav .logo {
+    color: #ecf0f1;
+    font-weight: 800;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.skills-links a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin-left: 24px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    letter-spacing: 0.8px;
+    font-size: 14px;
+}
+
+.skills-links a:hover,
+.skills-links a.active {
+    background: #FB460D;
+    color: #ffffff;
+}
+
+.skills-main {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 70px 20px;
+}
+
+.skills-header h1 {
+    font-size: 52px;
+    margin-bottom: 14px;
+    letter-spacing: 1px;
+}
+
+.skills-header p {
+    font-size: 18px;
+    color: #c2cad9;
+    max-width: 740px;
+    margin-bottom: 32px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 22px;
+}
+
+.skill-box {
+    background: rgba(10, 17, 31, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 18px;
+    padding: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.38);
+    opacity: 0;
+    animation: fadeUp 0.75s ease forwards;
+}
+
+.skill-box:nth-child(1) { animation-delay: 0.40s; }
+.skill-box:nth-child(2) { animation-delay: 0.80s; }
+.skill-box:nth-child(3) { animation-delay: 1.20s; }
+.skill-box:nth-child(4) { animation-delay: 1.60s; }
+.skill-box:nth-child(5) { animation-delay: 2.00s; }
+.skill-box:nth-child(6) { animation-delay: 2.40s; }
+
+.skill-box i {
+    font-size: 44px;
+    color: #FB460D;
+    margin-bottom: 12px;
+}
+
+.skill-box h2 {
+    margin: 8px 0 12px;
+    font-size: 24px;
+}
+
+.skill-box p {
+    color: #c9d1dd;
+    line-height: 1.5;
+    font-size: 15px;
+    margin-bottom: 16px;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 10px;
+    background: #2e3746;
+    border-radius: 999px;
+    overflow: hidden;
+    position: relative;
+}
+
+.skill-bar::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    background: linear-gradient(90deg, #FB460D, #f8b265);
+    border-radius: 999px;
+}
+
+.skills-note {
+    margin-top: 42px;
+    text-align: center;
+    color: #bfc9dc;
+    font-size: 17px;
+}
+
+.skills-footer {
+    background: #141314;
+    color: #dbe4f5;
+    text-align: center;
+    padding: 18px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(18px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fillBar {
+    to { width: var(--value); }
+}
+
+
+
